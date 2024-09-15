@@ -1,4 +1,5 @@
 
+
 let x = prompt("What is x?");
 let y = prompt("What is y?");
 
@@ -11,4 +12,9 @@ function addNumbers(num1, num2) {
 }
 
 const numberAdd = addNumbers(x, y);
-console.log(numberAdd);
+
+if (!Number.isInteger(Number(x, y))) {
+    alert("Please enter a valid integer");
+}   else {
+    alert(numberAdd);
+}

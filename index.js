@@ -1,3 +1,6 @@
+ // NAME: Preston Akmeemana
+ // DATE: September 16th, 2024
+ // TITLE: Calculator for Two Numbers
 
 operation = prompt("What operation do you want to use? (+, -, /, or *)")
 
@@ -9,6 +12,14 @@ y = parseFloat(y);
 
 let result;
 
+if (!Number.isInteger(x)) {
+    alert("Please enter a valid integer for x");
+}   
+
+if (!Number.isInteger(y)) {
+    alert("Please enter a valid integer for y");
+}   
+
 if (operation == "+") {
     result = x + y;
 } else if (operation == "-") {
@@ -17,17 +28,11 @@ if (operation == "+") {
     result = x * y;
 } else if (operation == "/") {
     result = x / y;
-} else if (operation == "+") {
-    result = x + y;
-}
+} else alert("");
 
-alert(result);
+console.log(result);
 
-if (!Number.isInteger(Number(x, y))) {
-    alert("Please enter a valid integer");
-}   else {
-    alert(numberAdd);
-}
+
 
 /* Setting a number for x and a letter for y results in NaN but is different vice versa. 
 

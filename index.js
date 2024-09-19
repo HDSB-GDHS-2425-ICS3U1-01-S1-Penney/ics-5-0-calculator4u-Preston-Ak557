@@ -28,7 +28,7 @@ if (operation == "+") {
     result = x * y;
 } else if (operation == "/") {
     result = x / y;
-} else alert("");
+}
 
 console.log(result);
 

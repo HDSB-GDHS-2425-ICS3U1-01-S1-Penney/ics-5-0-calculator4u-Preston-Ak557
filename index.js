@@ -35,9 +35,3 @@ if (operation == "+") {
 if (Number.isInteger(result)) {
     alert(result);
 } else console.log(result);
-
-
-
-
-
-
